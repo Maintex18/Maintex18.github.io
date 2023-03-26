@@ -1,0 +1,330 @@
+body {
+    max-width: 1080px;
+    max-height:1920px; 
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+a {
+  text-decoration: none; /* Отключение подчеркивания */
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+    margin-left: 180px;
+  display: flex;
+  align-items: center;
+}
+.header_logo img{
+  height: 98px;
+width: 96px;
+left: -3211px;
+top: -1115px;
+border-radius: 0px;
+
+}
+
+
+.ptg {
+margin-top: 20px;
+margin-left: -30px;
+left: -3139px;
+top: -1077px;
+border-radius: nullpx;
+color:#FF0B0B;
+font-family: Inter;
+font-size: 32px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: left;
+white-space: nowrap;
+}
+
+.ls {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.ls img{
+margin-left: 864px;  
+height: 49px;
+width: 48px;
+left: -1868px;
+top: -1087px;
+border-radius: 0px;
+
+}
+.ls .nav-item {
+margin-top: 20px;
+margin-left: 20px;
+white-space: nowrap;
+font-family: Inter;
+font-size: 32px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+}
+
+.buttons {
+  margin-top: -85px;
+  margin-left: 800px;
+  display: flex; /* Расположение элементов в ряд */
+  justify-content: center; /* Выравнивание по центру */
+}
+
+.button {
+  display: inline-block; /* Элементы в одну строку */
+  margin: 15px; /* Отступы между кнопками */
+  padding: 10px 40px; /* Размеры кнопок */
+  color: white; /* Цвет текста */
+  text-decoration: none; /* Отключение подчеркивания */
+  border: none; /* Удаление границы */
+  white-space: nowrap;
+  font-family: Inter;
+font-size: 40px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+}
+.images-container {
+  width: 1700px;
+  display: flex; /* Делаем контейнер flex-контейнером */
+  justify-content: space-between; /* Распределяем картинки равномерно по контейнеру */
+  align-items: center; /* Выравниваем картинки по вертикали по центру */
+  margin: 110px 64px; /* Добавляем отступы между картинками */
+}
+
+.images-container img {
+  max-width: 100%; /* Задаем максимальную ширину картинок на случай, если они больше, чем контейнер */
+}
+
+  
+
+.wrapper {
+    margin-top: 106px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.red-block {
+    margin-left: 63px;  
+  position: absolute;
+width: 746px;
+height: 661px;
+background: #ED1919;
+  font-size: 24px;
+  text-align: center;
+}
+
+.red-block p {
+  position: absolute;
+width: 225px;
+height: 39px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+    color: #FFFFFF;
+}
+
+.photo1 {
+    margin-left: 1011px;
+  position: absolute;
+width: 755px;
+height: 661px;
+}
+
+.topic {
+  display: inline-block; /* Элементы в одну строку */
+  margin: 15px; /* Отступы между кнопками */
+  padding: 10px 40px; /* Размеры кнопок */
+  color: white; /* Цвет текста */
+  text-decoration: none; /* Отключение подчеркивания */
+  border: none; /* Удаление границы */
+  white-space: nowrap;
+  font-family: Inter;
+font-size: 40px;
+font-weight: 400;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+}
+.text {
+margin-top: 137px;
+margin-left: 544px;
+text-align: center;
+position: absolute;
+width: 704px;
+height: 39px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+color: #ED1919;    
+    }
+.start-button {
+  margin-top: 161px;
+  display: inline-block;
+  width: 394px;
+  height: 90px;
+  background-color: #ED1919;;
+  color: white;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Скрыть модальное окно по умолчанию */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Стили для контейнера модального окна */
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  max-width: 500px;
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Стили для кнопки закрытия модального окна */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+    font-family: Inter;
+}
+
+/* Стили для формы в модальном окне */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+    font-family: Inter;
+}
+
+/* Стили для полей ввода и меток */
+label {
+  display: block;
+  margin-bottom: 10px;
+    font-family: Inter;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  width: 100%;
+    font-family: Inter;
+}
+
+/* Стили для кнопки входа */
+button[type="submit"] {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 75px;
+  cursor: pointer;
+    font-family: Inter;
+    font-size: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: darkred;
+}
+#modal {
+  width: 907px;
+  height: 927px;
+}
+.modal-title {
+  text-align: center;
+  font-family: Inter;
+}
+///////////////////////////
+  
+}
+
+#paragraphs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+}
+
+
+ #paragraphs button {
+  margin: 30px ;
+  text-align: center;
+  width: 50%;
+  width: 394px;
+height: 90px;
+background: #ED1919;
+border-radius: 25px;
+}
+#paragraphs p{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 48px;
+
+color: #000000;
+}
+#paragraphs textarea {
+  margin: 10px 200px;
+  text-align: center;
+  width: 40%;
+  transform: scale(2);
+}
+.container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+

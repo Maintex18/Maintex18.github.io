@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Parma</title>
+</head>
+<body>
+    <div class='header'>
+      <div class='header_logo'>
+        <img src="logo.svg" alt="">
+        <div class='ptg'>
+          <p>Parma Technologies Group</p>
+        </div>
+        <div class='ls'>
+            <span id="username" style="display: none;"></span>
+          <img src="ls.svg" alt="">
+          <a class='nav-item' id="open-modal" href="#" onclick="openModal()">Личный кабинет</a>
+            <div class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+      <div class="modal-title">
+    <h2>Авторизация</h2>
+          </div>
+    <form>
+      <label for="login">Логин:</label>
+      <input type="text" id="login" name="login" required>
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="button" onclick="submitForm()">Войти</button>
+
+    </form>
+  </div>
+</div>
+
+<script src="main.js" ></script>
+        </div>
+      </div>
+    </div>
+<div style="width: 1920px; height: 75px; background-color: #ED1919;"></div>
+
+<div class="buttons">
+  <a href="index.html" class="button">О компании</a>
+  <a href="index2.html" class="button">Сотрудникам</a>
+  <a href="#" class="button">Комфорт</a>
+  <a href="#" class="button">О себе</a>
+  <a href="#" class="button">Новости</a>
+  <a href="#" class="button">Контакты</a>
+</div>
+<div class='text'>
+  <p>Чтобы пройти тест нажмите кнопку НАЧАТЬ</p>
+  <button class="start-button" onclick="location.href='index4.html'">Начать</button>
+
+</div>
+
+
+
+
+
